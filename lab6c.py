@@ -26,7 +26,7 @@ def s3_or_s5(s3,s5):
     return result_set
 
 def s3_and_s5_not_s7(s3,s5,s7):
-    number = s3.union(s5)
+    number = s3.intersection(s5)
     number = number.difference(s7)
     return number
 

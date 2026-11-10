@@ -23,3 +23,8 @@ def main():
     add_movie(movie_database, 'Digger', 'Alejandro González Iñárritu', '2026', '128 minutes')
     add_movie(movie_database, 'Solo Mio', 'Charles Kinnane, Daniel Kinnane', '2026', '96 minutes')
     add_movie(movie_database, '28 Years Later: The Bone Temple', 'Nia DaCosta', '2026', '109 minutes')
+
+    for movie in movie_database:
+        print(movie)
+
+main()
