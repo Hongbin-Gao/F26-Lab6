@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Hongbin
+# Date: 2026/11/06
 # Purpose: Use Dictionary for Structured Data.
 # Usage: ./lab6h.py
 
@@ -31,7 +31,11 @@ def main():
     
     add_movie(movie_database, 'Gone with the wind', 'Victor Fleming', '1939', '238 minutes')
     add_movie(movie_database, 'Forever gone', 'Mikey McGregor', '2015', '3 minutes')
-    print(find_movie(movie_database, 'gone'))
-    print(find_movie(movie_database, "later"))
+
+    for i in find_movie(movie_database, 'gone'):
+        print(i)
+    print('\n')
+    for i in find_movie(movie_database, "28"):
+        print(i)
 
 main()
